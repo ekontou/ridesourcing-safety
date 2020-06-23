@@ -1,0 +1,44 @@
+
+	Hausman Test
+
+data:  fmi
+chisq = 133.37, df = 6, p-value < 2.2e-16
+alternative hypothesis: one model is inconsistent
+
+
+	Hausman test for spatial models
+
+data:  x
+chisq = 102.28, df = 6, p-value < 2.2e-16
+alternative hypothesis: one model is inconsistent
+
+
+	LM test for spatial lag dependence
+
+data:  formula (within transformation)
+LM = 5.0429, df = 1, p-value = 0.02473
+alternative hypothesis: spatial lag dependence
+
+
+	LM test for spatial error dependence
+
+data:  formula (within transformation)
+LM = 4.8159, df = 1, p-value = 0.0282
+alternative hypothesis: spatial error dependence
+
+
+	Locally robust LM test for spatial lag dependence sub spatial
+	error
+
+data:  formula (within transformation)
+LM = 3.0145, df = 1, p-value = 0.08252
+alternative hypothesis: spatial lag dependence
+
+
+	Locally robust LM test for spatial error dependence sub spatial
+	lag
+
+data:  formula (within transformation)
+LM = 2.7875, df = 1, p-value = 0.095
+alternative hypothesis: spatial error dependence
+

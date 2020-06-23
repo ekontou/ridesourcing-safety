@@ -1,0 +1,30 @@
+Spatial panel fixed effects sarar model
+ 
+
+Call:
+spml(formula = fmc, data = pdata_rob2, listw = W.FOQ2, model = "within", 
+    effect = "twoways", lag = TRUE, spatial.error = "b")
+
+Residuals:
+     Min.   1st Qu.    Median   3rd Qu.      Max. 
+-1.879659 -0.250783  0.035638  0.295001  1.303924 
+
+Spatial error parameter:
+     Estimate Std. Error t-value Pr(>|t|)  
+rho -0.220205   0.094451 -2.3314  0.01973 *
+
+Spatial autoregressive coefficient:
+       Estimate Std. Error t-value  Pr(>|t|)    
+lambda 0.286250   0.078015  3.6692 0.0002433 ***
+
+Coefficients:
+                      Estimate  Std. Error t-value Pr(>|t|)   
+EmpPrcnt            4.6602e-02  1.6675e-01  0.2795 0.779881   
+MedHHInc           -2.3552e-06  1.0955e-06 -2.1499 0.031559 * 
+VehOwn0            -8.9815e-01  3.0580e-01 -2.9370 0.003314 **
+PopDensity          4.3046e-06  1.3239e-06  3.2515 0.001148 **
+TotalTrips         -2.0338e-07  6.0089e-07 -0.3385 0.735018   
+LogTripsRideAustin -5.2432e-03  6.7782e-03 -0.7735 0.439202   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

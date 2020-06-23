@@ -1,0 +1,26 @@
+Spatial panel fixed effects error model
+ 
+
+Call:
+spml(formula = fmd, data = pdata, listw = W.FOQ, model = c("within"), 
+    effect = c("twoways"), lag = FALSE, spatial.error = c("b"))
+
+Residuals:
+     Min.   1st Qu.    Median   3rd Qu.      Max. 
+-1.735973 -0.253310 -0.012274  0.279699  1.424138 
+
+Spatial error parameter:
+    Estimate Std. Error t-value Pr(>|t|)   
+rho 0.047392   0.018087  2.6202 0.008787 **
+
+Coefficients:
+                      Estimate  Std. Error t-value  Pr(>|t|)    
+EmpPrcnt            3.7828e-02  1.5896e-01  0.2380   0.81190    
+MedHHInc           -1.8454e-06  1.0081e-06 -1.8306   0.06716 .  
+VehOwn0            -7.7065e-02  2.9940e-01 -0.2574   0.79687    
+PopDensity          1.6808e-06  1.2767e-06  1.3166   0.18798    
+TotalTrips          1.2830e-06  6.0967e-07  2.1044   0.03534 *  
+LogTripsRideAustin -3.8054e-02  6.9063e-03 -5.5100 3.588e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

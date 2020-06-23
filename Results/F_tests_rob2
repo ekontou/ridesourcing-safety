@@ -1,0 +1,7 @@
+
+	Hausman test for spatial models
+
+data:  x
+chisq = 15.408, df = 6, p-value = 0.01731
+alternative hypothesis: one model is inconsistent
+
