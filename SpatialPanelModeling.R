@@ -13,6 +13,7 @@ library(tmap)
 library(leaflet)
 library(dplyr)
 library(corrplot)
+library(plm)
 
 #Read the 2 databases-make sure that these files are in your working directory 
 mydata <- read.csv('mydata.csv')
