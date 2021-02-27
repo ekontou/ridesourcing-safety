@@ -2,7 +2,6 @@
 library(readr)
 library(ggplot2)
 library(lmtest) #langrage multiplier test
-library(splm)
 library(naniar)
 library(gplots)
 library(spdep)
@@ -62,14 +61,14 @@ breaks = c(0, 0.5, 1, 2, 5, 10)
 tm_shape(auf.poly) + tm_polygons(facets, breaks=breaks, palette = "YlOrBr", free.scales=FALSE) + 
   tm_facets(nrow = 2, ncol=1, sync = TRUE) +
   tm_layout(panel.labels = c("Before: Avg. Crashes/1K people ", "After: Avg.Crashes/1K people"),  legend.position=c("left", "bottom")) 
-tmap_save(filename = "Fig3_panelA.tiff", dpi = 300)
+tmap_save(filename = "Fig3_panelA.pdf", dpi = 300)
 #Figure Maps Ridesourcing
 facets = c("TripsRA_B","TripsRA_A")
 breaks=c(0,0.05,0.1,0.3,5)
 tm_shape(auf.poly) + tm_polygons(facets, breaks=breaks, palette = "YlOrBr") + 
   tm_facets(nrow = 2, ncol=1, sync = TRUE) +
   tm_layout(panel.labels = c("Before: Avg. RA Trips/Population", "After: Avg. RA Trips/Population" ), legend.position=c("left", "bottom"), legend.stack="horizontal") 
-tmap_save(filename = "Fig3_panelB.tiff", dpi = 300)
+tmap_save(filename = "Fig3_panelB.pdf", dpi = 300)
 
 
 #Definition of spatial weights
